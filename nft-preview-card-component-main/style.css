@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+
+:root{
+/*     Primary */
+
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+
+/*     Neutral */
+
+    --Very-dark-blue-1: hsl(217, 54%, 11%);
+    --Very-dark-blue-2: hsl(216, 50%, 16%);
+    --Very-dark-blue-3: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background-color: var(--Very-dark-blue-1);
+    color: var(--White);
+    height: 100vh;
+    width: 100%;
+    font-family: "Outfit",sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container{
+    background-color: var(--Very-dark-blue-2);
+    width: 275px;
+    height: 475px;
+    border-radius: 10px;
+    padding: 1.15em;
+}
+
+.img-container{
+    position: relative;
+}
+
+
+.nft {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.empty{
+    position: absolute;
+    background-color:  hsl(178, 100%, 50%, 45%);
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    top:0;
+    opacity: 0;
+}
+
+.eye{
+    position: relative;
+    top:40%;
+    left: 40%;
+}
+
+.content-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.title-container{
+    color: var(--White);
+    font-weight: 600;
+    margin-top: 1em;
+    font-size: 18px;
+}
+
+.content{
+    margin-top: 1.5em;
+    color: var(--Soft-blue);
+    line-height: 1.5;
+    font-weight: 300;
+    font-size: 13px;
+}   
+
+.value-days{
+    margin-top: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--Very-dark-blue-3);
+    padding-bottom: 1.2em;
+    margin-bottom: 1em;
+}
+
+.price{
+    display: flex;
+    color: var(--Cyan);
+    align-items: center;
+    font-size: 12px;
+}
+
+.price span{
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+.price img{
+    width: 9%;
+    padding-bottom: 1.5px;
+}
+
+.days{
+    display: flex;
+    color: var(--Soft-blue);
+    align-items: center;
+}
+
+.days span{
+    margin-left: 3px;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.days img{
+    width: 18%;
+    padding-bottom: 1px;
+}
+
+
+.owner-contianer{
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    color: var(--Soft-blue);
+}
+
+.owner-contianer img{
+    width: 10%;
+    border: 1.3px solid white;
+    border-radius: 50%;
+    margin-right: 1em;
+}
+
+.owner-contianer span{
+    color: var(--White);
+    font-weight: 400;
+    margin-left: 5px;
+}
+
+/* actiacion */ 
+
+.owner-contianer span:hover,
+.title-container:hover{
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+
+.empty:hover{
+    opacity: 1;
+    cursor: pointer;
+}
+
